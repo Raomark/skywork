@@ -200,6 +200,8 @@ img {
   display: grid;
 }
 
+
+
 /* ========== magin out css ========== */
 
 .small-space {
@@ -255,7 +257,6 @@ img {
   transform: translateX(0.25rem);
 }
 
-
 /* ========== responsive set font for desktop css ========== */
 
 @media screen and (min-width: 992px) {
@@ -280,7 +281,7 @@ img {
 }
 
 .header-logo img {
-  width: 45px;
+  width: 30px;
   display: flex;
   align-self: center;
   z-index: 1000;
@@ -313,7 +314,7 @@ header {
   padding-top: 2.5rem;
   transition: 0.6s;
   opacity: 0;
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .nav-item {
@@ -880,10 +881,7 @@ header {
   }
 
   header {
-    /* line-height: 81px; */
-    display: flex;
-    justify-items: center;
-    align-items: center;
+    line-height: 81px;
   }
 
   .nav-menu {
@@ -899,11 +897,6 @@ header {
     background: transparent;
     line-height: 74px;
   }
-
-  .header-en {
-    z-index: 10000;
-  }
-
   .nav-item {
     padding: 0 1.5rem;
   }
@@ -913,7 +906,7 @@ header {
   }
 
   .header-logo img {
-    width: 50px;
+    width: 40px;
   }
 
   .header-logo {
@@ -1031,5 +1024,8 @@ header {
 
   .logo-footer {
     margin-bottom: 0.875rem;
+  }
+  .header-en {
+    z-index: 9999;
   }
 }
