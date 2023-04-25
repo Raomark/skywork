@@ -51,7 +51,7 @@ img {
 }
 
 main {
-  margin-top: 140px;
+  margin-top: 120px;
 }
 .header-blog-style {
   color: var(--header-color);
@@ -184,4 +184,5 @@ main {
   .small-blog-style {
     font-size: var(--small-font-blog);
   }
+
 }
