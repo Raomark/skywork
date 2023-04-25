@@ -1,0 +1,156 @@
+.header-logo:hover {
+	cursor: pointer;
+  }
+  
+  .header-logo img {
+	width: 30px;
+	display: flex;
+	align-self: center;
+	z-index: 1000;
+  }
+  
+  header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	background-color: #fff;
+	box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+	padding: 1.25rem;
+  }
+  .header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .nav-menu {
+	width: 80%;
+	position: fixed;
+	right: -100%;
+	top: 0;
+	height: 100%;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	padding-top: 2.5rem;
+	transition: 0.6s;
+	opacity: 0;
+	z-index: 10000;
+  }
+  
+  .nav-item {
+	padding: 1rem 2.5rem;
+  }
+  .nav-link {
+	font-size: var(--body-font);
+	color: var(--grey-color);
+	font-weight: 300;
+	transition: 0.4s;
+  }
+  .nav-link:hover {
+	color: var(--orange-color);
+  }
+  
+  .menu-icon i {
+	align-self: center;
+	display: flex;
+  }
+  
+  .active-link {
+	position: relative;
+	color: var(--orange-color);
+  }
+  
+  .close-icon {
+	position: absolute;
+	top: 0.8rem;
+	right: 0.8rem;
+	cursor: pointer;
+  }
+  
+  .close-icon,
+  .menu-icon {
+	font-size: var(--big-font);
+	align-self: center;
+  }
+  
+  .header-right {
+	display: flex;
+	align-items: center;
+	font-size: var(--body-font);
+	column-gap: 1rem;
+	position: relative;
+  }
+  .header-right a,
+  .menu-icon {
+	color: var(--body-color);
+  }
+  
+  .header-en::after {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 26px;
+	background-color: #f4f4f4;
+	right: 38px;
+	top: 50%;
+	transform: translateY(-50%);
+  }
+  
+  .open {
+	right: 0;
+	opacity: 1;
+  }
+  
+  /* ====================== Responsive 560px ======================== */
+  
+  @media screen and (min-width: 560px) {
+	.header-container {
+	  height: 40px;
+	  padding: 0 4%;
+	  width: 100%;
+	  right: 0;
+	}
+  }
+  
+   /* ====================== Responsive 940px ======================== */
+  @media screen and (min-width: 940px) {
+	.menu-icon,
+	.close-icon {
+	  display: none;
+	}
+  
+	header {
+	  line-height: 81px;
+	}
+  
+	.nav-menu {
+	  width: 100%;
+	  right: 0;
+	  top: 0;
+	  height: auto;
+	  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0);
+	  padding-top: 0rem;
+	  opacity: 1;
+	  display: flex;
+	  justify-content: center;
+	  background: transparent;
+	  line-height: 74px;
+	}
+	.nav-item {
+	  padding: 0 1.5rem;
+	}
+  
+	.nav-item a {
+	  font-size: var(--text-font);
+	}
+  
+	.header-logo img {
+	  width: 40px;
+	}
+  
+	.header-logo {
+	  z-index: 100000;
+	}
+  }

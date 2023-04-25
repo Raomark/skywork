@@ -1,0 +1,160 @@
+/* ================ scroll 320px chat ================ */
+
+.chat-container {
+	position: fixed;
+	bottom: 3.8rem;
+	right: -100%;
+	display: flex;
+	gap: 0.4rem;
+	transition: 0.5s;
+  }
+  
+  .chat {
+	padding: 0.5rem;
+	/* padding: 1rem; */
+	background-color: #2c2a7a;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1.5rem;
+	border-radius: 0.5rem 0 0 0.5rem;
+	transition: 0.4s;
+  }
+  
+  .fb {
+	padding: 0.4rem;
+	background-color: #3b5998;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1rem;
+	border-radius: 0.5rem;
+	position: fixed;
+	right: -100%;
+	visibility: hidden;
+	transition: 0.5s;
+	z-index: 1000;
+  }
+  .line {
+	padding: 0.4rem;
+	background-color: #00b900;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1rem;
+	border-radius: 0.5rem;
+	position: fixed;
+	right: -100%;
+	visibility: hidden;
+	transition: 0.5s;
+	z-index: -100;
+  }
+  
+  .openchat {
+	right: 0;
+  }
+  
+  .openchat-fb {
+	right: 3rem;
+	/* right: 4.5rem; */
+	visibility: visible;
+  }
+  .openchat-line {
+	right: 5.8rem;
+	/* right: 8.8rem; */
+	visibility: visible;
+  }
+  .chat-zone {
+	position: relative;
+  }
+  .fb img,
+  .line img {
+	/* width: 2.95rem; */
+	width: 1.5rem;
+  }
+  .chat i {
+	align-self: center;
+	display: flex;
+  }
+  .hidechat {
+	opacity: 0;
+	right: -100%;
+  }
+  .chat:hover {
+	cursor: pointer;
+	background-color: cornflowerblue;
+  }
+
+  .chat-dot {
+	color: #fff;
+  }
+
+   /* ================ scroll chat ================ */
+   @media screen and (min-width: 660px){
+   .chat-container {
+    position: fixed;
+    bottom: 3.8rem;
+    right: -100%;
+    display: flex;
+    gap: 0.4rem;
+    transition: 0.5s;
+  }
+
+  .chat {
+    padding: 1.25rem;
+  }
+
+  .fb {
+    padding: 0.4rem;
+    background-color: #3b5998;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    position: fixed;
+    right: -100%;
+    visibility: hidden;
+    transition: 0.5s;
+    z-index: -10;
+  }
+  .line {
+    padding: 0.4rem;
+    background-color: #00b900;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    position: fixed;
+    right: -100%;
+    visibility: hidden;
+    transition: 0.5s;
+    z-index: -10;
+  }
+
+  .line:hover,
+  .fb:hover {
+    background-color: cornflowerblue;
+  }
+
+  .openchat {
+    right: -8px;
+  }
+
+  .openchat-fb {
+    right: 4.1rem;
+    visibility: visible;
+  }
+  .openchat-line {
+    right: 8.4rem;
+    visibility: visible;
+  }
+  .chat-zone {
+    position: relative;
+  }
+  .fb img,
+  .line img {
+    width: 2.95rem;
+  }
+}

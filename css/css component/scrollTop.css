@@ -1,0 +1,53 @@
+
+.scrolltop {
+	background-color: var(--orange-color);
+	position: fixed;
+	right: -100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem;
+	transition: 0.6s;
+	cursor: pointer;
+	visibility: hidden;
+	z-index: 1000;
+	border-radius: 0.5rem 0 0 0.5rem;
+	box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scrolltop i {
+	font-size: 1.5rem;
+	/* font-size: 2rem; */
+	color: #fff;
+	cursor: pointer;
+  }
+  /* show scrolltop */
+  
+  .scroll-top {
+	visibility: visible;
+	bottom: 6.7rem;
+	/* bottom: 8.3rem; */
+	right: 0rem;
+  }
+  
+  .scrolltop:hover {
+	background-color: orangered;
+  }
+  
+@media screen and (min-width: 660px){
+
+	.scrolltop i {
+		font-size: 3rem;
+		color: #fff;
+		cursor: pointer;
+	  }
+	
+	  /* show scrolltop */
+	
+	  .scroll-top {
+		visibility: visible;
+		bottom: 8.3rem;
+		/* right: 0rem; */
+		right: -8px;
+	  }
+  }
