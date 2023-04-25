@@ -691,13 +691,9 @@ header {
 .chat-dot {
   color: #fff;
 }
-/* .social img {
-  transition: 0.4s;
-  width: 40px;
+.project-b-l img {
+  height: 100%;
 }
-.social img:hover {
-  transform: translateY(-5px);
-} */
 /* ====================== Responsive 560px ======================== */
 
 @media screen and (min-width: 560px) {
