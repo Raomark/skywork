@@ -71,7 +71,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.6rem;
   transition: 0.6s;
   cursor: pointer;
   visibility: hidden;
@@ -102,15 +102,16 @@ img {
 /* ================ scroll chat ================ */
 .chat-container {
   position: fixed;
-  bottom: 3.8rem;
+  bottom: 3.7rem;
   right: -100%;
   display: flex;
   gap: 0.4rem;
   transition: 0.5s;
+  z-index: 10000;
 }
 
 .chat {
-  padding: 0.5rem;
+  padding: 0.6rem;
   /* padding: 1rem; */
   background-color: #2c2a7a;
   outline: none;
@@ -122,7 +123,7 @@ img {
 }
 
 .fb {
-  padding: 0.4rem;
+  padding: 0.5rem;
   background-color: #3b5998;
   outline: none;
   border: none;
@@ -136,7 +137,7 @@ img {
   z-index: 1000;
 }
 .line {
-  padding: 0.4rem;
+  padding: 0.5rem;
   background-color: #00b900;
   outline: none;
   border: none;
@@ -160,7 +161,7 @@ img {
   visibility: visible;
 }
 .openchat-line {
-  right: 5.8rem;
+  right: 6rem;
   /* right: 8.8rem; */
   visibility: visible;
 }
@@ -170,7 +171,7 @@ img {
 .fb img,
 .line img {
   /* width: 2.95rem; */
-  width: 1.5rem;
+  width: 1.7rem;
 }
 .chat i {
   align-self: center;
@@ -183,6 +184,11 @@ img {
 .chat:hover {
   cursor: pointer;
   background-color: cornflowerblue;
+}
+.line a, .fb a, .chat i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* ========== lay out css ========== */
 .section {
@@ -815,7 +821,7 @@ header {
   }
 
   .fb {
-    padding: 0.4rem;
+    padding: 0.55rem;
     background-color: #3b5998;
     outline: none;
     border: none;
@@ -829,7 +835,7 @@ header {
     z-index: -10;
   }
   .line {
-    padding: 0.4rem;
+    padding: 0.55rem;
     background-color: #00b900;
     outline: none;
     border: none;
@@ -848,15 +854,15 @@ header {
   }
 
   .openchat {
-    right: -8px;
+    right: -5px;
   }
 
   .openchat-fb {
-    right: 4.1rem;
+    right: 4.2rem;
     visibility: visible;
   }
   .openchat-line {
-    right: 8.4rem;
+    right: 8.78rem;
     visibility: visible;
   }
   .chat-zone {
@@ -915,7 +921,7 @@ header {
     height: 300px;
   }
   .banner {
-    height: 600px;
+    height: 800px;
   }
   .banner-header {
     font-size: var(--big-font);

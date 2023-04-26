@@ -91,7 +91,51 @@ main {
   color: var(--body-color);
   padding-right: 0.5rem;
 }
+.blog-content {
+  position: relative;
+  padding: 1.5rem 0rem;
+}
+.blog-post {
+  position: absolute;
+  bottom: 0;
+}
+.btn-change-page {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-pagination-number {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.page-btn {
+  width: 100px;
+  text-align: center;
+  padding: 0.5rem 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.3rem;
+  font-size: var(--small-font-blog);
+  cursor: pointer;
+  background-color: #fff;
+}
 
+.active-page {
+  background-color: var(--orange-color);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .2rem;
+}
+.active-page a {
+  color: #fff;
+}
+
+.pagination,
+.page-btn {
+  color: var(--body-color);
+}
 @media screen and (min-width: 660px) {
   :root {
     --big-font-blog: 2rem;
@@ -105,7 +149,10 @@ main {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
- 
+  .blog-content {
+    margin-bottom: 0rem;
+  }
+
   .blog-r {
     margin: 1rem 0;
   }
@@ -115,7 +162,7 @@ main {
   }
 
   .blog-menu {
-    padding: 2rem 0;
+    padding: 1.5rem 0 0 0;
   }
 
   .blog-r-img img {
@@ -123,6 +170,9 @@ main {
     height: 100%;
     object-fit: cover;
     object-position: center;
+  }
+  .blog-pagination {
+    margin: 3rem;
   }
 }
 
@@ -164,7 +214,7 @@ main {
   .blog-r img {
     margin-bottom: 1.5rem;
     object-fit: cover;
-	height: 150px;
+    height: 150px;
   }
   .blog-r-img img {
     height: 100%;
@@ -174,8 +224,13 @@ main {
     flex-direction: column;
     justify-content: start;
   }
+
   .body-blog-style {
-    font-size: var(--small-font-blog);
+    font-size: var(--body-font-blog);
+    margin-bottom: 0.5rem;
+  }
+  .sidebar-blog-style {
+    font-size: 15px;
     margin-bottom: 0.5rem;
   }
   .header-blog-style {
@@ -184,5 +239,10 @@ main {
   .small-blog-style {
     font-size: var(--small-font-blog);
   }
-
+  .blog-pagination {
+    margin: 2rem;
+  }
+  .blog-pagination {
+    margin: 5rem;
+  }
 }
