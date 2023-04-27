@@ -921,7 +921,7 @@ header {
     height: 300px;
   }
   .banner {
-    height: 750px;
+    height: 100vh;
   }
   .banner-header {
     font-size: var(--big-font);
